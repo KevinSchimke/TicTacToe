@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,74 @@
     <script src="script/script.js"></script>
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
     <table>
+
         <tr>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
+            <td onclick="matchfield(0)">
+                <div>
+                    <img id="cross_0" class="imgCrossCircle d-none" src="img/cross.png">
+                    <img id="circle_0" class="imgCrossCircle d-none" src="img/circle.png"> 
+                </div>
+            </td>
+            <td onclick="matchfield(1)">
+                <div>
+                    <img id="cross_1" class="imgCrossCircle d-none" src="img/cross.png">
+                    <img id="circle_1" class="imgCrossCircle d-none" src="img/circle.png"> 
+                </div>
+            </td>
+            <td onclick="matchfield(2)">
+                <div>
+                    <img id="cross_2" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_2" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
         </tr>
+
         <tr>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
+            <td onclick="matchfield(3)">
+                <div>
+                    <img id="cross_3" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_3" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
+            <td onclick="matchfield(4)">
+                <div>
+                    <img id="cross_4" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_4" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
+            <td onclick="matchfield(5)">
+                <div>
+                    <img id="cross_5" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_5" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
         </tr>
+
         <tr>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
-            <td><div><img class="imgCrossCircle" src="img/circle.png"> <img class="imgCrossCircle" src="img/cross.png"></div></td>
+            <td onclick="matchfield(6)">
+                <div>
+                    <img id="cross_6" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_6" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
+            <td onclick="matchfield(7)">
+                <div>
+                    <img id="cross_7" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_7" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
+            <td onclick="matchfield(8)">
+                <div>
+                    <img id="cross_8" class="imgCrossCircle d-none" src="img/cross.png"> 
+                    <img id="circle_8" class="imgCrossCircle d-none" src="img/circle.png">
+                </div>
+            </td>
         </tr>
+
     </table>
 </body>
+
 </html>

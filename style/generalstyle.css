@@ -1,3 +1,6 @@
+.d-none{
+    display: none;
+}
 table {
     border-collapse: collapse;
 }
@@ -10,6 +13,11 @@ td {
     width: 140px;
     height: 140px;
     border: 5px solid black;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 tr:first-child td {
@@ -30,6 +38,8 @@ table tr td:last-child {
 
 .imgCrossCircle{
     position: absolute;
+    height: 100px;
+    width: 100px;
 }
 
 td div {
