@@ -1,3 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-repeat: round;
+}
+
 .d-none{
     display: none;
 }
@@ -46,5 +57,34 @@ td div {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.player_panel {
+    margin-bottom: 2em;
+    display: flex;
+}
+.player_panel div{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.player_panel div p{
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 32px;
+}
+
+.player_inactive{
+    opacity: 0.5;
+}
+
+.balken{
+    height: 10px;
+    width: 400px;
+    background-color: red;
+    display: flex;
     align-items: center;
 }
