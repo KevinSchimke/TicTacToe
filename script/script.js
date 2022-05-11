@@ -1,9 +1,10 @@
 let fields = [];
-
+let gameover = false;
+let timeoutGameover = 1000;
 let currentPlayer = 'cross';
 
 function matchfield(ID) {
-    if (!fields[ID]) {
+    if (!fields[ID] && !gameover) {
         if (currentPlayer == 'cross') {
             currentPlayer = 'circle';
             document.getElementById('player_1').classList.remove('player_inactive');
@@ -69,6 +70,9 @@ function checkWinner() {
     }
 
     if (!!winner) {
-        console.log('Gewonnen:', winner);
+        gameover = true;
+        setTimeout(function() {
+            document.getElementById('game_over').classList.remove('d-none');
+        }, timeoutGameover);
     }
 }
