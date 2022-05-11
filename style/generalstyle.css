@@ -61,6 +61,42 @@ td div {
     align-items: center;
 }
 
+#line_0{
+    top: 62px;
+}
+
+#line_1{
+    top: 209px;
+}
+
+#line_2{
+    top: 356px;
+}
+
+#line_3{
+    top: 209px;
+    right: -2px;
+}
+
+#line_4{
+    top: 209px; 
+    right: -150px;
+}
+
+#line_5{
+    top: 209px; 
+    right: -297px;
+}
+
+#line_6{
+    top: 209px;
+    width: 425px;
+}
+
+#line_7{
+    top: 209px;
+    width: 425px;
+}
 .player_panel {
     margin-bottom: 2em;
     display: flex;

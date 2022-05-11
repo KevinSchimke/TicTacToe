@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/generalstyle.css">
+    <link rel="stylesheet" href="style/media.css">
     <script src="script/script.js"></script>
     <title>Tic Tac Toe</title>
 </head>
@@ -15,23 +16,23 @@
     <button class="restart d-none" id="restart" onclick="restart()">Neu Start</button>
     <div class="player_panel">
         <div id="player_1" class="player_inactive">
-            <img src="img/cross.png">
+            <img class="mediaImg" src="img/cross.png">
             <p>Player 1</p>
         </div>
         <div id="player_2">
-            <img src="img/circle.png">
+            <img class="mediaImg" src="img/circle.png">
             <p>Player 2</p>
         </div>
     </div>
     <div class="table_lineOverlay"> 
-        <div id="line_0" class="horizontal_line" style="top: 62px"></div>
-        <div id="line_1" class="horizontal_line" style="top: 209px"></div>
-        <div id="line_2" class="horizontal_line" style="top: 356px"></div>
-        <div id="line_3" class="horizontal_line vertical_line" style="top: 209px; right: -2px;"></div>
-        <div id="line_4" class="horizontal_line vertical_line" style="top: 209px; right: -150px;"></div>
-        <div id="line_5" class="horizontal_line vertical_line" style="top: 209px; right: -297px;"></div>
-        <div id="line_6" class="horizontal_line" style="top: 209px; width: 425px; transform: rotate(45deg) scaleX(0)"></div>
-        <div id="line_7" class="horizontal_line" style="top: 209px; width: 425px; transform: rotate(-45deg) scaleX(0)"></div>
+        <div id="line_0" class="horizontal_line"></div>
+        <div id="line_1" class="horizontal_line"></div>
+        <div id="line_2" class="horizontal_line" ></div>
+        <div id="line_3" class="horizontal_line vertical_line"></div>
+        <div id="line_4" class="horizontal_line vertical_line"></div>
+        <div id="line_5" class="horizontal_line vertical_line"></div>
+        <div id="line_6" class="horizontal_line" style="transform: rotate(45deg) scaleX(0)"></div>
+        <div id="line_7" class="horizontal_line" style="transform: rotate(-45deg) scaleX(0)"></div>
     </div>
     <table>
         <tr>
