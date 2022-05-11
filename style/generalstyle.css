@@ -7,6 +7,7 @@ body{
     min-height: 100vh;
     background-image: url(../img/background.jpg);
     background-repeat: round;
+    color: white;
 }
 
 .d-none{
@@ -23,12 +24,12 @@ tr {
 td {
     width: 140px;
     height: 140px;
-    border: 5px solid black;
+    border: 5px solid white;
     cursor: pointer;
 }
 
 td:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 tr:first-child td {
@@ -81,10 +82,30 @@ td div {
     opacity: 0.5;
 }
 
-.balken{
-    height: 10px;
-    width: 400px;
-    background-color: red;
+/* .horizontal_line{
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 300px;
+    position: absolute;
+} */
+
+.horizontal_line {
+    height: 18px;
+    width: 300px;
+    position: absolute;
+    /* transform: scaleX(0.0); */
+    transition: transform 225ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.vertical_line{
+    transform: rotate(90deg) scaleX(1);
+}
+
+.table{
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
