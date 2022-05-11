@@ -70,13 +70,13 @@ function checkWinner() {
         winner = fields[2];
         document.getElementById('line_7').style.transform = 'rotate(-45deg) scale(1)'
     }
-    // if (!!winner) {
-    //     gameover = true;
-    //     setTimeout(function() {
-    //         document.getElementById('game_over').classList.remove('d-none');
-    //         document.getElementById('restart').classList.remove('d-none');
-    //     }, timeoutGameover);
-    // }
+    if (!!winner) {
+        gameover = true;
+        setTimeout(function() {
+            document.getElementById('game_over').classList.remove('d-none');
+            document.getElementById('restart').classList.remove('d-none');
+        }, timeoutGameover);
+    }
 }
 
 function restart() {

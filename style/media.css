@@ -77,4 +77,19 @@
         top: 148px;
         width: 300px;
     }
+    .game_over{
+        height: 60vh;
+    }
+    .restart{
+        top: 70vh;
+        padding: 10px 40px 10px 40px;
+    }
+}
+@media (max-width : 400px) {
+    .game_over{
+        height: 50vh;
+    }
+    .restart{
+        top: 66vh;
+    }
 }
