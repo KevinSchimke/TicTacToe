@@ -82,28 +82,21 @@ td div {
     opacity: 0.5;
 }
 
-/* .horizontal_line{
-    height: 18px;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 300px;
-    position: absolute;
-} */
-
 .horizontal_line {
     height: 18px;
     width: 300px;
     position: absolute;
-    /* transform: scaleX(0.0); */
+    transform: scaleX(0);
     transition: transform 225ms ease-in-out;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
 }
 
 .vertical_line{
-    transform: rotate(90deg) scaleX(1);
+    transform: rotate(90deg) scaleX(0);
 }
 
-.table{
+.table_lineOverlay{
     position: relative;
     display: flex;
     align-items: center;
