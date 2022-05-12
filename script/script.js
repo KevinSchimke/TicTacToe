@@ -1,8 +1,9 @@
 let fields = [];
+let drawCount = 0;
+let winner = false;
 let gameover = false;
 let timeoutGameover = 1000;
 let currentPlayer = 'cross';
-let drawCount = 0;
 
 function matchfield(ID) {
     if (!fields[ID] && !gameover) {
@@ -33,11 +34,13 @@ function draw() {
     drawCount++;
 }
 
-function checkWinner() {
-    let winner;
+function checkUndecidedWinner() {
     if (drawCount == 9){
         winner = true;
     }
+}
+
+function checkHorizontalWinner() {
     if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
         winner = fields[0];
         document.getElementById('line_0').style.transform = 'scale(1)'
@@ -50,6 +53,9 @@ function checkWinner() {
         winner = fields[6];
         document.getElementById('line_2').style.transform = 'scale(1)'
     }
+}
+
+function checkVerticalWinners() {
     if (fields[0] == fields[3] && fields[3] == fields[6] && fields[0]) {
         winner = fields[0];
         document.getElementById('line_3').style.transform = 'rotate(90deg) scale(1)'
@@ -62,6 +68,9 @@ function checkWinner() {
         winner = fields[2];
         document.getElementById('line_5').style.transform = 'rotate(90deg) scale(1)'
     }
+}
+
+function checkDiagonalWinner() {
     if (fields[0] == fields[4] && fields[4] == fields[8] && fields[0]) {
         winner = fields[0];
         document.getElementById('line_6').style.transform = 'rotate(45deg) scale(1)'
@@ -70,6 +79,9 @@ function checkWinner() {
         winner = fields[2];
         document.getElementById('line_7').style.transform = 'rotate(-45deg) scale(1)'
     }
+}
+
+function showEndscreen(){
     if (!!winner) {
         gameover = true;
         setTimeout(function() {
@@ -79,8 +91,17 @@ function checkWinner() {
     }
 }
 
+function checkWinner() {
+    checkUndecidedWinner();
+    checkHorizontalWinner();
+    checkVerticalWinners();
+    checkDiagonalWinner();
+    showEndscreen();
+}
+
 function restart() {
     gameover = false;
+    winner = false;
     drawCount = 0;
     fields = [];
     document.getElementById('game_over').classList.add('d-none');
